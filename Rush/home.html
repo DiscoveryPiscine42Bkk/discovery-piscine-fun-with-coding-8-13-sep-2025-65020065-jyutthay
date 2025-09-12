@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* พื้นหลัง gradient สดใส ชมพู → เขียว */
+      background: linear-gradient(135deg, #f7a8c8, #90d080);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .box {  
+      padding: 50px 60px;
+      border-radius: 20px;
+      text-align: center;
+      background: #fffac0; /* กล่องเหลือง */
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);  /* เงานุ่ม */
+    }
+
+    h1 {    /* ข้อความหัวเรื่อง */
+      margin-bottom: 50px;
+      font-size: 80px;
+      color: #000000;
+      line-height: 1.2;
+    }
+
+    a.btn { /* ลิงก์ไปหน้าอื่น */
+      display: inline-block;
+      padding: 20px 40px;
+      margin: 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn1 { background: #f5b2cb; color: white; } /* ปุ่มชมพู */
+    .btn1:hover { background: #e08fb8; transform: translateY(-3px); }    
+
+    .btn2 { background: #82b18d; color: white; } /* ปุ่มเขียว */
+    .btn2:hover { background: #6ba170; transform: translateY(-3px); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Welcome to Our Portfolio</h1>
+    <a href="port1.html" class="btn btn1">Portfolio 1</a>
+    <a href="port2.html" class="btn btn2">Portfolio 2</a>
+  </div>
+</body>
+</html>
