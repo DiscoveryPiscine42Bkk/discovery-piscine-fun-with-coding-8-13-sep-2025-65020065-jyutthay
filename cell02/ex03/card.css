@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #fefed1;
+}
+
+.card {
+    background-color: #fff;
+    width: 280px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.social-icons img {
+
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.social-icons img:nth-child(2){
+
+    transform: scale(1.1);
+    margin: 10px;
+    position: relative;      
+    
+   
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f827a1;
+    color: #fcffd8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b30048;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table td {
+    border: none;
+}
