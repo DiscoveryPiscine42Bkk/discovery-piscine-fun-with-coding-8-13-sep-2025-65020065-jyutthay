@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic Calculator</h1>
+    
+    <form id="calculatorForm">
+        <input type="number" id="leftNumber" placeholder="Left number" min="0" required>
+        
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        
+        <input type="number" id="rightNumber" placeholder="Right number" min="0" required>
+        
+        <input type="submit" value="Try me!">
+    </form>
+
+    <script>
+        const form = document.getElementById('calculatorForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // ป้องกัน form submit ปกติ
+
+            const left = parseInt(document.getElementById('leftNumber').value);
+            const right = parseInt(document.getElementById('rightNumber').value);
+            const operator = document.getElementById('operator').value;
+
+            // ตรวจสอบว่าค่าเป็นจำนวนเต็ม >= 0
+            if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
+                alert('Error :(');
+                return;
+            }
+
+            // ตรวจสอบการหารหรือโมดูโลด้วย 0
+            if ((operator === '/' || operator === '%') && right === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+
+            let result;
+
+            switch(operator) {
+                case '+':
+                    result = left + right;
+                    break;
+                case '-':
+                    result = left - right;
+                    break;
+                case '*':
+                    result = left * right;
+                    break;
+                case '/':
+                    result = left / right;
+                    break;
+                case '%':
+                    result = left % right;
+                    break;
+                default:
+                    alert('Error :(');
+                    return;
+            }
+
+            alert(`Result: ${result}`);
+            console.log(`Result: ${result}`);
+        });
+
+        // Alert ทุก 30 วินาที
+        setInterval(() => {
+            alert('Please, use me...');
+        }, 30000);
+    </script>
+
+</body>
+</html>
