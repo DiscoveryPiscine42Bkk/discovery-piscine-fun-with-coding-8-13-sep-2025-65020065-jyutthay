@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #fbf4d7;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #edbccb;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6aebc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5ab0d2;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #8c9c5c;
+    color: white;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #edbccb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.about-text h2 {
+    color: #8c9c5c;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #edbccb;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+/* Showcase Title */
+.showcase-title {
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #8c9c5c;
+    border-radius: 12px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Showcase Container */
+.showcase-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Showcase Blocks */
+.showcase-block {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #edbccb;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.showcase-block:hover {
+    background-color: #5ab0d2;
+    color: white;
+}
