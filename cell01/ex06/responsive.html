@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+         html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        table {
+            width: 100%;
+            height: 100vh; 
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2vw;
+            border: 1px solid black;
+        }
+
+        .cell1 {
+            background-color: #eeee89;
+        }
+
+        .cell2 {
+            background-color: #99f1ca;
+        }
+
+        @media (max-width: 600px) {
+            td {
+                font-size: 4vw; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="cell1">Never</td>
+            <td class="cell2">Ever</td>
+        </tr>
+    </table>
+
+</body>
+</html>
